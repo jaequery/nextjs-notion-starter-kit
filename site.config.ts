@@ -9,19 +9,19 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Hanmi News',
+  domain: 'hanminews.com',
+  author: 'Hanmi News',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Hanmi News - Apple Valley Korean Community Website',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  twitter: 'hanminews',
+  github: 'hanminews',
+  linkedin: 'hanminews',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
-  // newsletter: '#', // optional newsletter URL
+  newsletter: 'https://typeform.com', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
@@ -50,16 +50,40 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'Home',
+      pageId: '946584a0396a4e9b96f696abe34b6c8a'
+    },
+    {
+      title: '타운 개시판',
+      pageId: '946584a0396a4e9b96f696abe34b6c8a'
+    },
+    {
+      title: '비지니스',
+      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    },
+    {
+      title: '교회',
+      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    },
+    {
+      title: '부동산',
+      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    },
+    {
+      title: '뉴스 / 컬럼',
+      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    },
+    {
+      title: '열락처',
+      pageId: '7b515c7797bf4239a497d0b3fbc45fba'
+    },
+    {
+      title: 'PDF 보기',
+      url: '/pdf'
+    }
+  ]
 })
